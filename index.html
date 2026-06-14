@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noor Fatima | Web Developer Intern</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>NF<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#skills"  class="nav-link">Skills</a>
+        <a href="#projects"class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class='bx bx-moon' id="themeIcon"></i>
+        </button>
+      </nav>
+
+     
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <section class="hero" id="hero">
+   
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">👋 Hello, world! I'm</p>
+      <h1 class="hero-name" id="heroName">Noor Fatima</h1>
+      <h2 class="hero-title">
+        <span class="typed-wrapper">
+          <span id="typedText"></span><span class="cursor">|</span>
+        </span>
+      </h2>
+      <p class="hero-desc">
+        A passionate beginner turning curiosity into code — one project at a time.
+        Currently seeking a <strong>Web Developer Intern</strong> role where I can
+        grow, contribute, and learn from real-world challenges.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#contact"  class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+ 
+    <div class="hero-card">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="file-name">noor.js</span>
+        </div>
+        <pre class="code-body"><span class="kw">const</span> <span class="var">noor</span> = {
+  <span class="key">role</span>:   <span class="str">"Web Dev Intern"</span>,
+  <span class="key">skills</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>],
+  <span class="key">goal</span>:   <span class="str">"Build & Learn"</span>,
+  <span class="key">status</span>: <span class="str">"Open to work 🚀"</span>
+};</pre>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">A Little About <span class="accent">Myself</span></h2>
+
+      <div class="about-grid">
+      
+        <div class="about-avatar" data-reveal="left">
+          <div class="avatar-frame">
+            <div class="avatar-initials">NF</div>
+          </div>
+          <div class="about-badges">
+            <span class="badge">🎓 Computer Science</span>
+            <span class="badge">💼 Open to Work</span>
+            <span class="badge">📍 Pakistan</span>
+          </div>
+        </div>
+
+        <div class="about-text" data-reveal="right">
+          <p>
+            Hi! I'm <strong>Noor Fatima</strong>, a Software engineering student with a genuine
+            passion for building things on the web. I'm at the beginning of my journey,
+            but I believe in learning by doing — every project teaches me something new.
+          </p>
+          <p>
+            I enjoy creating clean, user-friendly interfaces and I'm constantly
+            expanding my knowledge in web development, AI, and digital tools.
+            Outside of code, I love problem-solving, creative thinking, and helping
+            others understand technology.
+          </p>
+          <p>
+            I'm looking for an internship where I can apply what I know, grow fast,
+            and contribute meaningfully to a team. I bring curiosity, dedication,
+            and a strong willingness to learn every single day.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects Built</span></div>
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Tech Skills</span></div>
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Dedication</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-tag">What I Know</div>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <p class="section-sub">A snapshot of the tools and abilities I bring to the table.</p>
+
+      <div class="skills-grid">
+
+   
+        <div class="skill-card" data-reveal="up" data-delay="0">
+          <div class="skill-icon-wrap" style="--icon-color:#7C3AED">
+            <i class='bx bx-code-alt'></i>
+          </div>
+          <h3 class="skill-name">Web Development</h3>
+          <p class="skill-desc">HTML5, CSS3, JavaScript — building responsive, accessible websites from scratch.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal="up" data-delay="100">
+          <div class="skill-icon-wrap" style="--icon-color:#059669">
+            <i class='bx bx-spreadsheet'></i>
+          </div>
+          <h3 class="skill-name">MS Office Suite</h3>
+          <p class="skill-desc">Proficient in Word, Excel, and PowerPoint for documentation, data, and presentations.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal="up" data-delay="200">
+          <div class="skill-icon-wrap" style="--icon-color:#DB2777">
+            <i class='bx bx-brain'></i>
+          </div>
+          <h3 class="skill-name">Artificial Intelligence</h3>
+          <p class="skill-desc">Exploring AI concepts, prompt engineering, and machine learning fundamentals with growing enthusiasm.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="50">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">50%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal="up" data-delay="300">
+          <div class="skill-icon-wrap" style="--icon-color:#D97706">
+            <i class='bx bx-conversation'></i>
+          </div>
+          <h3 class="skill-name">Communication</h3>
+          <p class="skill-desc">Clear written and verbal communication; comfortable presenting ideas and collaborating in teams.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-reveal="up" data-delay="400">
+          <div class="skill-icon-wrap" style="--icon-color:#0EA5E9">
+            <i class='bx bx-bulb'></i>
+          </div>
+          <h3 class="skill-name">Problem Solving</h3>
+          <p class="skill-desc">Analytical thinker who breaks complex problems into small, solvable steps.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-tag">What I've Built</div>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <p class="section-sub">Small but meaningful — here's what I've worked on so far.</p>
+
+      <div class="projects-grid">
+
+    
+        <article class="project-card" data-reveal="up" data-delay="0">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="--proj-color:#7C3AED">
+              <i class='bx bx-globe'></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+              <a href="#" class="proj-link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">My first fully responsive portfolio website with dark/light theme, smooth animations, and clean UI.</p>
+          </div>
+        </article>
+
+      
+        <article class="project-card" data-reveal="up" data-delay="150">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="--proj-color:#059669">
+              <i class='bx bx-calculator'></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+              <a href="#" class="proj-link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">JavaScript Calculator</h3>
+            <p class="project-desc">A fully functional calculator built with vanilla JavaScript, featuring keyboard support and clean styling.</p>
+          </div>
+        </article>
+
+ 
+        <article class="project-card" data-reveal="up" data-delay="300">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="--proj-color:#DB2777">
+              <i class='bx bx-task'></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+              <a href="#" class="proj-link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">To-Do List App</h3>
+            <p class="project-desc">A task management app with add, delete, and complete features — saved to localStorage for persistence.</p>
+          </div>
+        </article>
+
+     
+        <article class="project-card" data-reveal="up" data-delay="450">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="--proj-color:#D97706">
+              <i class='bx bx-cloud-rain'></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+              <a href="#" class="proj-link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">API</span>
+            </div>
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">A simple weather dashboard using OpenWeatherMap API to display real-time forecasts by city.</p>
+          </div>
+        </article>
+
+      
+        <article class="project-card" data-reveal="up" data-delay="600">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="--proj-color:#0EA5E9">
+              <i class='bx bx-quiz'></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="proj-link" aria-label="Live Demo"><i class='bx bx-link-external'></i></a>
+              <a href="#" class="proj-link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Quiz App</h3>
+            <p class="project-desc">An interactive multiple-choice quiz app with score tracking, timer, and animated result screen.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-tag">Say Hello</div>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub">
+        I'm currently open to internship opportunities. Whether you have a question,
+        want to collaborate, or just want to say hi — my inbox is always open!
+      </p>
+
+      <div class="contact-grid">
+       
+        <div class="contact-info">
+          <div class="contact-card" data-reveal="left">
+            <i class='bx bx-envelope contact-icon'></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:noorsoftwareeng@gmail.com" class="contact-value">noorsoftwareeng@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" data-reveal="left" data-delay="100">
+            <i class='bx bx-map contact-icon'></i>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Pakistan 🇵🇰</span>
+            </div>
+          </div>
+          <div class="contact-card" data-reveal="left" data-delay="200">
+            <i class='bx bx-briefcase contact-icon'></i>
+            <div>
+              <span class="contact-label">Status</span>
+              <span class="contact-value status-open">Open to Work ✓</span>
+            </div>
+          </div>
+
+        
+          <div class="social-links" data-reveal="left" data-delay="300">
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/noor-fatima345567?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn" aria-label="LinkedIn">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter / X">
+              <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/noorayy_635?igsh=MTNvNGRpNWhud3Y0MA==" class="social-btn" aria-label="Instagram">
+              <i class='bx bxl-instagram'></i>
+            </a>
+          </div>
+        </div>
+
+    
+        <div class="contact-form-wrap" data-reveal="right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="userName">Your Name</label>
+              <input type="text" id="userName" name="name" placeholder="e.g. Noor" required />
+            </div>
+            <div class="form-group">
+              <label for="userEmail">Email Address</label>
+              <input type="email" id="userEmail" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="userMessage">Message</label>
+              <textarea id="userMessage" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="btnText">Send Message</span>
+              <i class='bx bx-send' id="btnIcon"></i>
+            </button>
+            <p class="form-notice" id="formNotice"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <span class="accent">Noor Fatima</span>
+        &nbsp;·&nbsp; Made with ❤️ and lots of ☕
+      </p>
+      <p class="footer-copy">&copy; <span id="footerYear"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
